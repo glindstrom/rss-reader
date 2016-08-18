@@ -58,10 +58,4 @@ public class FeedItem {
     public void setCategory(String category) {
         this.category = category;
     }
-    
-    public String getDisplayDate() {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM HH:mm");
-        return sdf.format(publicationDate);
-    }
-   
 }
