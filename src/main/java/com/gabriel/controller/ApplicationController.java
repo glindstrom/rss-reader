@@ -53,10 +53,7 @@ public class ApplicationController {
                     || (currentDate.getTime() - feedLastUpdated.getTime() > FEED_MAX_AGE_MILLISECONDS)) {
                 this.feedCache.put(feed, parseFeedItems(fetchFeed(feed.getUrl())));
                 feed.setLastUpdated(currentDate);
-                System.out.println("Data fetched");
-            } else {
-                System.out.println("Cache used");
-            }
+            } 
         }
     }
     

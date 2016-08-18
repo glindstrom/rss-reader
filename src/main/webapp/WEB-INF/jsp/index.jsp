@@ -25,7 +25,7 @@
                         <td><a href="${item.link}">${item.title}</a></td>
                         <td>${item.title}</td>
                         <td>${item.category}</td>
-                        <td class="publication-date"><fmt:formatDate value="${item.publicationDate}" pattern="dd.MM.yyyy HH:mm"/></td>
+                        <td><fmt:formatDate value="${item.publicationDate}" pattern="dd.MM.yyyy HH:mm"/></td>
                     </tr>
                 </c:forEach>
             </tbody>
